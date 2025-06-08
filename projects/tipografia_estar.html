@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tipografía ESTAR</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    @font-face {
+      font-family: 'Sora';
+      src: url('../assets/fonts/Sora-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'OutfitExtraLight';
+        src: url('../assets/fonts/Outfit-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    h1 {
+        font-family: 'Sora', sans-serif;
+    }
+
+    header {
+      background-color: #1d1d1f;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .top-images {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem 1rem 0;
+      box-sizing: border-box;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .top-images img {
+      width: 48%;
+      height: auto;
+      object-fit: contain;
+      max-width: 590px;
+    }
+
+    .text-block {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: justify;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      font-family: 'EstarFont', sans-serif;
+    }
+
+    .bottom-images {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .bottom-images img {
+      width: calc((100% - 2rem) / 3);
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    @font-face {
+      font-family: 'EstarFont';
+      src: url('../assets/fonts/Estar-Regular.otf') format('opentype');
+    }
+
+    .typography-box {
+      max-width: 1200px;
+      margin: 2rem auto 4rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .typography-box h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .typography-box textarea {
+      width: 100%;
+      min-height: 200px;
+      font-family: 'EstarFont', sans-serif;
+      font-size: 2rem;
+      padding: 1rem 1.5rem;
+      border: none;
+      border-radius: 12px;
+      resize: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease, background-color 0.3s ease;
+      background-color: #fafafa;
+      color: #1d1d1f;
+      outline: none;
+    }
+
+    .typography-box textarea:focus {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tipografía ESTAR</h1>
+    <nav><a href="../index.html" style="color: white;">← Volver al portfolio</a></nav>
+  </header>
+
+  <!-- Dos fotos arriba -->
+  <div class="top-images">
+    <img src="../assets/images/tipografia2.PNG" alt="Estar Foto 1">
+    <img src="../assets/images/tipografia1.PNG" alt="Estar Foto 2">
+  </div>
+
+  <!-- Texto -->
+  <div class="text-block">
+    <p>
+      ESTAR es una tipografía creada como parte de un proyecto personal de diseño tipográfico avanzado. El nombre proviene de mi marca personal, y la intención desde el principio fue desarrollar una fuente que combinara elegancia, carácter y funcionalidad, reflejando mi sensibilidad como diseñadora gráfica.
+    </p>
+      Se trata de una tipografía romana con serif, cuidadosamente diseñada para funcionar en contextos editoriales exigentes, como libros, revistas o identidades visuales sofisticadas. Lo que hace especial a ESTAR es su contraste marcado entre trazos finos y gruesos, la delicadeza de sus remates y el equilibrio entre sus proporciones. Las mayúsculas tienen una altura ligeramente menor que las ascendentes, y detalles distintivos como las curvas afiladas de la Q, el ampersand o los números 4 y 5 le dan una personalidad reconocible.
+    </p>
+      Durante el proceso, presté especial atención al espaciado entre letras y al kerning, asegurando una legibilidad óptima en cuerpos de texto largos, pero también una presencia elegante en usos display, como logotipos o titulares.
+    </p>
+  </div>
+
+  <!-- Tres fotos -->
+  <div class="bottom-images">
+    <img src="../assets/images/tipografia3.PNG" alt="Estar Foto 3">
+    <img src="../assets/images/tipografia4.PNG" alt="Estar Foto 4">
+    <img src="../assets/images/tipografia5.PNG" alt="Estar Foto 5">
+  </div>
+
+  <!-- Cuadro interactivo -->
+  <div class="typography-box">
+    <h2>Prueba la tipografía</h2>
+    <textarea placeholder="Escribe algo aquí..."></textarea>
+  </div>
+
+  <script>
+    const textarea = document.querySelector('textarea');
+    textarea.addEventListener('input', () => {
+      textarea.style.height = 'auto';
+      textarea.style.height = textarea.scrollHeight + 'px';
+    });
+  </script>
+</body>
+</html>

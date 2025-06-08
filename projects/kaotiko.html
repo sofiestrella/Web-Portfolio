@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>KAOTIKO - Proyecto</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    @font-face {
+      font-family: 'Sora';
+      src: url('../assets/fonts/Sora-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'OutfitExtraLight';
+        src: url('../assets/fonts/Outfit-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    h1 {
+        font-family: 'Sora', sans-serif;
+    }
+
+    header {
+      background-color: #1d1d1f;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .image-row img {
+  width: calc((100% - 3rem) / 4);
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;  /* transicion suave */
+}
+
+.image-row img:hover {
+  transform: scale(1.05);  /* zoom 5% */
+  z-index: 1;
+}
+
+    .text-block {
+      margin-top: 2rem;
+      font-family: 'OutfitExtraLight', sans-serif;
+      font-weight: 200;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+     p {
+        font-family: 'OutfitExtraLight', sans-serif;
+        font-weight: 200;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KAOTIKO</h1>
+    <nav><a href="../index.html" style="color: white">← Volver al portfolio</a></nav>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="../assets/images/kaotiko1.jpg" alt="Kaotiko 1">
+      <img src="../assets/images/kaotiko2.jpg" alt="Kaotiko 2">
+      <img src="../assets/images/kaotiko3.jpg" alt="Kaotiko 3">
+      <img src="../assets/images/kaotiko4.jpg" alt="Kaotiko 4">
+    </div>
+
+    <div class="text-block">
+      <p>
+        Este proyecto surge en el contexto de un taller de moda en UDIT, donde trabajamos de forma experimental y creativa con prendas reales de la marca Kaotiko. La propuesta consistía en intervenir dos jerséis originales de la firma —idénticos en diseño pero diferentes en color— para crear nuevas piezas únicas, más personales y disruptivas.
+      </p>
+        El proceso comenzó con la elección de los dos jerséis: uno en tonos beige y otro en azul marino, ambos con el icónico bordado de Kaotiko en el pecho. A partir de ahí, planteamos un rediseño basado en el intercambio de elementos entre ambas prendas. Decidimos intercambiar las mangas y añadir un parche frontal contrastado, jugando con la geometría de las franjas y generando una composición visualmente llamativa, pero equilibrada.
+      </p>
+        La intervención no fue solo estética, sino también técnica. Utilizamos máquinas industriales para desmontar, coser y reconstruir las piezas con precisión, respetando la estructura original de las prendas pero dándoles un nuevo carácter. Este ejercicio nos permitió trabajar con conceptos de upcycling, personalización y edición limitada, muy presentes hoy en el mundo de la moda contemporánea.
+      </p>
+        El resultado son dos jerséis híbridos que mantienen la esencia de Kaotiko pero con una nueva identidad: más atrevida, más visual y más personal. El uso del bordado original como elemento unificador refuerza la autenticidad de las piezas, mientras que los contrastes de color y forma las convierten en productos únicos.
+      </p>
+        Este proyecto ha sido una oportunidad para explorar el diseño de moda desde una perspectiva práctica, poniendo en valor la reutilización creativa y el diseño colaborativo como herramientas para generar prendas más significativas y sostenibles.
+      </p>
+    </div>
+  </main>
+</body>
+</html>

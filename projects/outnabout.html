@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>OUT N ABOUT - Proyecto</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    @font-face {
+      font-family: 'Sora';
+      src: url('../assets/fonts/Sora-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'OutfitExtraLight';
+        src: url('../assets/fonts/Outfit-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    h1 {
+        font-family: 'Sora', sans-serif;
+    }
+
+    header {
+      background-color: #1d1d1f;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+
+    .content-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 2rem;
+      padding: 3rem 5%;
+    }
+
+    .text-block {
+      font-family: 'OutfitExtraLight', sans-serif;
+      font-weight: 200;
+      flex: 1;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+     p {
+        font-family: 'OutfitExtraLight', sans-serif;
+        font-weight: 200;
+    }
+
+    .image-container {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OUT N ABOUT</h1>
+    <nav><a href="../index.html" style="color: white;">← Volver al portfolio</a></nav>
+  </header>
+
+  <!-- Imagen horizontal completa -->
+  <img src="../assets/images/Outnabout2.jpg" alt="Portada" class="hero-image" />
+
+  <!-- Fila: texto + imagen -->
+  <section class="content-row">
+    <div class="text-block">
+      <p>
+        Out N About es una aplicación móvil diseñada para facilitar la búsqueda, reserva y recomendación de eventos personalizados. El objetivo de este proyecto fue crear una experiencia digital útil, atractiva y socialmente interactiva para personas que quieren descubrir actividades que encajen con sus intereses.
+      </p>
+        El proceso comenzó con una fase de investigación centrada en entrevistas y encuestas, que nos permitió definir perfiles de usuario y comprender mejor sus hábitos. A partir de ahí, construimos mapas de empatía, recorridos de usuario y analizamos aplicaciones similares para detectar oportunidades de mejora.
+      </p>
+        Nuestra propuesta de valor se basa en cuatro pilares: recomendación personalizada según preferencias, sistema de reservas integrado, almacenamiento de actividades y una red social interna para compartir experiencias. Todo ello pensado para ofrecer una experiencia completa y centrada en el usuario.
+      </p>
+        En cuanto al diseño, desarrollamos wireframes, moodboards y un prototipo de alta fidelidad utilizando Figma. Optamos por una interfaz clara, moderna y dinámica, con un sistema visual coherente basado en el azul eléctrico como color principal. Este color transmite energía y confianza, elementos clave en una app que invita a salir, descubrir y conectar.
+      </p>
+        Out N About no solo permite buscar eventos, sino también vivirlos en comunidad. Los usuarios pueden compartir fotos, valorar experiencias y recomendar actividades a otros, generando una red social de ocio basada en gustos reales.
+      </p>
+        Este proyecto ha sido una oportunidad para aplicar fundamentos de UX/UI, diseño visual y pensamiento estratégico, siempre desde la empatía con el usuario. Representa una combinación de funcionalidad y diseño, y una muestra de cómo la tecnología puede potenciar nuestras experiencias cotidianas de forma sencilla y significativa.
+      </p>
+    </div>
+    <div class="image-container">
+      <img src="../assets/images/Outnabout1.jpg" alt="Foto secundaria" />
+    </div>
+  </section>
+</body>
+</html>

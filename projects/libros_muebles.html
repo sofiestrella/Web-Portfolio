@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>LIBROS Y MUEBLES - Proyecto</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    @font-face {
+      font-family: 'Sora';
+      src: url('../assets/fonts/Sora-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'OutfitExtraLight';
+        src: url('../assets/fonts/Outfit-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    h1 {
+        font-family: 'Sora', sans-serif;
+    }
+
+    header {
+      background-color: #1d1d1f;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .slider-fullscreen {
+      width: 70%;
+      max-height: 80vh;
+      position: relative;
+      margin: 0 auto 2rem auto;
+      border-radius: 8px;
+    }
+
+    .slider-fullscreen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .slider-fullscreen img.active {
+      display: block;
+    }
+
+    .slider-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 1rem;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .slider-controls button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+      border-radius: 20%;
+      cursor: pointer;
+      margin: 0 10px;
+      pointer-events: all;
+    }
+
+    .slider-controls button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+    }
+
+    .image-row img {
+      width: calc((100% - 2rem) / 3);
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .text-block {
+      font-family: 'OutfitExtraLight', sans-serif;
+      font-weight: 200;
+      max-width: 1200px;
+      margin: 2rem auto;
+      text-align: justify;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+     p {
+        font-family: 'OutfitExtraLight', sans-serif;
+        font-weight: 200;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LIBROS Y MUEBLES</h1>
+    <nav><a href="../index.html" style="color: white;">← Volver al portfolio</a></nav>
+  </header>
+
+  <main>
+    <div class="slider-fullscreen">
+      <img src="../assets/images/libro1.JPG" class="active" alt="Slider 1">
+      <img src="../assets/images/libro2.JPG" alt="Slider 2">
+      <img src="../assets/images/libro3.JPG" alt="Slider 3">
+      <div class="slider-controls">
+        <button onclick="changeSlide(-1)">❮</button>
+        <button onclick="changeSlide(1)">❯</button>
+      </div>
+    </div>
+
+    <div class="image-row">
+      <img src="../assets/images/libro4.JPG" alt="Foto 4">
+      <img src="../assets/images/libro5.JPG" alt="Foto 5">
+      <img src="../assets/images/libro6.JPG" alt="Foto 6">
+    </div>
+
+    <div class="text-block">
+      <p>
+       Esta colección de libros nace del interés por el interiorismo contemporáneo y el diseño de muebles como disciplina estética y funcional. Bajo el título Furniture Design, presento una serie de publicaciones editoriales que exploran el universo del mobiliario desde una mirada moderna, minimalista y cuidada.
+      </p>
+        Cada libro está pensado no solo como un catálogo de objetos, sino como una experiencia visual. La simplicidad del diseño editorial refleja los valores del interiorismo que lo inspira: orden, equilibrio, belleza en lo esencial. Las portadas limpias, la estructura clara y el uso comedido del color contribuyen a reforzar una identidad visual coherente y elegante.
+      </p>
+        A través del diseño de esta colección, he querido resaltar el papel del libro como objeto: algo que se ve, se toca y se disfruta. La elección tipográfica, el ritmo de la maquetación y los blancos estratégicos están pensados para dar protagonismo a las piezas de mobiliario sin competir con ellas, potenciando su forma y presencia.
+      </p>
+        El proyecto se alinea con mi estilo personal como diseñadora: sobrio, funcional y refinado, pero con una mirada atenta a los pequeños detalles. Cada página ha sido construida con intención, buscando una armonía entre contenido y forma, entre lo gráfico y lo espacial.
+      </p>
+        Furniture Design no solo muestra muebles: propone una forma de mirar el diseño como estilo de vida. Es un ejercicio editorial que une estética y técnica, y que pone en valor el diseño de interiores como expresión de identidad, cultura y sensibilidad visual.
+      </p>
+        Esta colección representa mi capacidad de trabajar con lenguaje editorial, dirección de arte y diseño gráfico aplicados a una temática concreta, desde una narrativa visual coherente y profesional.
+      </p>
+    </div>
+  </main>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider-fullscreen img');
+
+    function showSlide(index) {
+      slides.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+    }
+
+    function changeSlide(direction) {
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    setInterval(() => {
+      changeSlide(1);
+    }, 3000);
+  </script>
+</body>
+</html>
