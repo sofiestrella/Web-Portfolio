@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Sofía Estrella</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <style>
+    @font-face {
+        font-family: 'Unbounded';
+        src: url('./asssets/fonts/Unbounded[wght].ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Sora';
+        src: url('./assets/fonts/Sora-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'OutfitExtraLight';
+        src: url('./assets/fonts/Outfit-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    h2, h3 {
+        font-family: 'Sora', sans-serif;
+    }
+
+    p {
+        font-family: 'OutfitExtraLight', sans-serif;
+        font-weight: 200;
+    }
+
+    .titulo-personal {
+        font-family: 'Unbounded', sans-serif;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+
+    /* SOBRE MÍ */
+    #sobre-mi {
+      background-color: #f9f9f9;
+      padding: 4rem 1rem;
+    }
+
+    #sobre-mi h2 {
+      text-align: center;
+      font-family: 'Sora', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    #sobre-mi .contenido {
+        display: flex;
+        flex-wrap: nowrap;
+        height: auto;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+   #sobre-mi .contenido img {
+        width: 30%;
+        max-width: 250px;
+        flex: 1;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    #sobre-mi .contenido .texto {
+      flex: 2;
+      min-width: 280px;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+      font-family: 'OutfitExtraLight', sans-serif;
+    }
+
+  </style>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icons/favicons/favicon.ico" />
+</head>
+<body>
+  <header>
+    <h1 class="titulo-personal">SOFÍA ESTRELLA REDONDA</h1>
+    <p>Diseño Audiovisual e Ilustración</p>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi" class="about-section">
+  <h2>Sobre mí</h2>
+  <div class="contenido">
+    <img src="./assets/images/sof.JPG" alt="Sofía Estrella">
+    <div class="texto">
+  <p>
+    Soy Sofía Estrella Redonda, estudiante de Diseño Audiovisual e Ilustración en UDIT, y apasionada por el diseño gráfico como forma de expresión y conexión. Me considero una persona ambiciosa, creativa y proactiva, con muchas ganas de seguir creciendo y aprendiendo. Disfruto desarrollando nuevas habilidades y adaptándome a distintos retos visuales.
+    <p>
+    Mi estilo se caracteriza por una estética moderna, limpia y minimalista, aunque me gusta experimentar y salir de mi zona de confort cuando un proyecto lo pide. Me interesa especialmente el equilibrio entre lo técnico y lo emocional: creo que el diseño debe ser funcional, pero también transmitir algo auténtico.
+    <p>
+    He trabajado en proyectos de identidad visual, diseño editorial, tipografía, fotografía y diseño web, siempre buscando que cada detalle tenga un propósito. Me apasiona trabajar en equipo y valoro mucho el proceso colaborativo. Domino herramientas como Photoshop, Illustrator, InDesign y After Effects.
+  </p>
+    </div>
+  </div>
+</section>
+
+    <section id="projects" class="projects-section">
+  <h2>Proyectos</h2>
+  <div class="projects-grid">
+    <a href="projects/marca_personal.html" class="project-card">
+      <img src="assets/images/marca1.png" alt="ESTAR">
+      <h3>ESTAR</h3>
+      <p>Marca personal basada en mi apellido Estrella, con una identidad estética, elegante y cercana.</p>
+    </a>
+    <a href="projects/libros_muebles.html" class="project-card">
+      <img src="assets/images/libro0.JPG" alt="KAOTIKO">
+      <h3>COLECCIÓN DE LIBROS</h3>
+      <p>Se trata de una colección de libros de muebles de diseño.</p>
+    </a>
+    <a href="projects/outnabout.html" class="project-card">
+      <img src="assets/images/Outnabout1.jpg" alt="Libros y muebles">
+      <h3>OUT N ABOUT</h3>
+      <p>Diseño de aplicación para crear y organizar planes.</p>
+    </a>
+    <a href="projects/tipografia_estar.html" class="project-card">
+      <img src="assets/images/tipografia1.PNG" alt="EXBOOK">
+      <h3>TIPOGRAFÍA</h3>
+      <p>Estar es una tipografía con serif elegante que aporta un toque de distinción a cualquier proyecto visual.</p>
+    </a>
+    <a href="projects/kaotiko.html" class="project-card">
+      <img src="assets/images/kaotiko4.jpg" alt="Men x Woman">
+      <h3>KAOTIKO</h3>
+      <p>Rediseño de dos prendas de la marca Kaotiko de edición limitada.</p>
+    </a>
+    <a href="projects/fotografia.html" class="project-card">
+      <img src="assets/images/fotografia3.JPG" alt="Carteles">
+      <h3>FOTOGRAFÍA</h3>
+      <p>Fotografías en moviminto.</p>
+    </a>
+  </div>
+</section>
+
+   <section id="contact" class="contact-section">
+  <h2>Contacto</h2>
+  <div class="contact-row">
+    <a href="mailto:sofiestrella2507@gmail.com" class="contact-item">
+      <img src="assets/icons/email.png" alt="email" />
+      <span>sofiestrella2507@gmail.com</span>
+    </a>
+    <a href="tel:662 92 35 61" class="contact-item">
+      <img src="assets/icons/phone.png" alt="teléfono" />
+      <span>662 92 35 61</span>
+    </a>
+    <a href="https://www.instagram.com/sofi_estrella.design" class="contact-item" target="_blank">
+      <img src="assets/icons/instagram.png" alt="Instagram" />
+      <span>@sofi_estrella.design</span>
+    </a>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sofía Estrella Redonda</p>
+  </footer>
+</body>
+</html>
