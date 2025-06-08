@@ -1,0 +1,165 @@
+@import url('theme.css');
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+header {
+  background-image: url('../assets/images/fondo_header.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: var(--primary);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary);
+  color: white;
+}
+
+.about-section {
+  background-color: #f9f6f2; /* color claro de fondo */
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #1d1d1f;
+}
+
+.about-section h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #1d1d1f;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 1rem 1rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  margin: 0 1rem 1.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #1d1d1f;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 4rem; /* separa visualmente sin barras */
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none; /* 🔹 sin subrayado */
+  transition: text-decoration 0.3s ease;
+}
+
+.contact-item:hover {
+  text-decoration: underline; /* 🔹 subrayado al pasar el ratón */
+}
+
+.contact-item img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
